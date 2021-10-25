@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>КТ4 Парсинг</title>
+ </head>
+ <body>
+<table>
+ <thead>
+  {%- for column in columns %}
+     <th>{{ column }}</th>
+  {%- endfor %}
+ </thead>
+
+ <tbody>
+ {%- for row in items %}
+    <tr>
+    {%- for element in row %}
+       <td>{{ element }}</td>
+    {%- endfor %}
+    </tr>
+ {%- endfor %}
+ </tbody>
+ </table>
+  </body>
+</html>
